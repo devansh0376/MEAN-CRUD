@@ -1,0 +1,42 @@
+
+<!-- <div class="row">
+    <div class="col-3">
+         <button (click)="getAlluser()" class="btn btn-success">Load user</button>
+    </div>
+</div> -->
+
+<div class="row">
+    <div class="col-6">
+          <div class="col-6 d-flex justify-content-end align-items-center">
+            <button class="add-user-btn" routerLink="/users/add">Add User</button>
+        </div>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Sr No</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                    <th>Address</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for(user of userList ; track $index)
+                {
+                    <tr>
+                        <td>{{$index+1}}</td>
+                        <td>{{user.name}}</td>
+                        <td>{{user.email}}</td>
+                        <td>{{user.age}}</td>
+                        <td>{{user.address}}</td>
+                        <td>
+                            <button [routerLink]="'/users/' + user._id">Edit</button>
+                            <button (click)="deleteUser(user._id!)">Delete</button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+# Node.js (Backend)
+node_modules/
+.env
+package-lock.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+/dist
+/.env.local
+/.cache
+.DS_Store
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Angular (Frontend)
+node_modules/
+.angular/
+.vscode/
+dist/
+coverage/
+package-lock.json
+*.tsbuildinfo
+
+# IDE / Editor settings
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS system files
+Thumbs.db
+.DS_Store
